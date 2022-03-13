@@ -1,21 +1,28 @@
 <template>
- <Navbar/>
- 
+  <Navbar/>
+  <router-view/>
+  <Footer/>
 </template>
 
 <script>
-import Navbar from './components/Navbar.vue'
-
+import Navbar from "@/components/Navbar.vue";
+import Footer from "@/components/Footer.vue";
 export default {
-  name: 'App',
   components: {
-    Navbar
+    Navbar,
+    Footer
   }
 }
 </script>
 
 <style lang="scss">
+body {
+  background-color: $color-sand;
+
+}
 #app {
+  min-heigh: 100vh;
   font-family: $font-family;
 }
+
 </style>
