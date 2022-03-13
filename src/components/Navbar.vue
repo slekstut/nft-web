@@ -1,15 +1,20 @@
 <template>
     <div class="full-bleed">
         <div class="wrapper">
-            <div class="logo"></div>
+            <router-link to="/">
+                <div class="logo"></div>
+            </router-link>
             <nav>
-                <router-link to="/">Home</router-link>
-                <router-link to="/about">About</router-link>
+                <ul>
+                    <li><router-link to="/">Discover</router-link></li>
+                    <li><router-link to="/about">Marketplace</router-link></li>
+                    <li><router-link to="/about">Creator</router-link></li>
+                </ul>
             </nav>
             <div class="mobile-menu">menu</div>
             <div class="cta">
-                <button>Login</button>
-                <button class="active-btn">Create wallet</button>
+                <button><router-link to="/">Login</router-link></button>
+                <button class="active-btn"><router-link to="/">Create wallet</router-link></button>
             </div>
         </div>
   </div>
@@ -22,5 +27,54 @@
 </script>
 
 <style lang="scss" scoped>
-
+.full-bleed {
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 2.5rem;
+        .logo {
+            background-image: url('../assets/images/logo.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 43px;
+            width: 85px;
+        }
+        nav ul {
+            display: flex;
+            gap: $gap-2;
+            justify-content: center;
+            list-style: none;
+            li {
+                a {
+                  font-size: 1rem;
+                  color: $color-dark-blue;
+                  text-decoration: none;  
+                }
+            }
+        }
+        .mobile-menu {
+            display: none;
+        }
+        .cta {
+            button {
+                background-color: transparent;
+                color: $color-dark-blue;
+                border: none;
+                a {
+                    color: $color-sand;
+                    font-weight: 400;
+                    text-decoration: none;
+                }
+            }
+            .active-btn {
+                background-color: $color-dark-blue;
+                padding: 1rem 1.2rem;
+                border: none;
+                border-radius: 10.875rem;
+            }
+        }
+    }
+}
 </style>
