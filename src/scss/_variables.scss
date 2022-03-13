@@ -1,7 +1,13 @@
+@import 'utilities';
 // colors
-$red: red;
+$color-white: #F0F0F0;
+$color-sand: #C1C1C1;
+$color-dark-blue: #0A0D2C;
 // fonts
-$font-size: 20px;
+@import url('https://fonts.googleapis.com/css2?family=Quantico:wght@400;700&display=swap');
+$font-family: 'Quantico',
+sans-serif;
+$font-size: 16px;
 // Basic reset of defaults
 
 /* Box sizing rules */
