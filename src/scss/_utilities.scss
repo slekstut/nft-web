@@ -1,5 +1,6 @@
 .full-bleed {
     width: 100vw;
+    max-width: 90rem;
     margin-left: calc(50% - 50vw);
 }
 
@@ -9,7 +10,8 @@
 //     margin-right: auto;
 // }
 .wrapper {
-    max-width: 90rem;
+    // max-width: 90rem;
+    max-width: 77.5rem;
     margin-left: auto;
     margin-right: auto;
 }

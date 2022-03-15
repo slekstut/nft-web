@@ -74,33 +74,6 @@ export default {
     .cta {
       display: flex;
       gap: 0.5rem;
-      button {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: nowrap;
-        flex: 0 50%;
-        padding: 1rem 2.2rem;
-        background-color: transparent;
-        color: $color-dark-blue;
-        border: none;
-        a {
-          flex-wrap: nowrap;
-          white-space: nowrap;
-          color: $color-dark-blue;
-          font-weight: 400;
-          text-decoration: none;
-        }
-      }
-      .active-btn {
-        background-color: $color-dark-blue;
-        border: none;
-        border-radius: 10.875rem;
-        a {
-          flex-wrap: nowrap;
-          color: $color-sand;
-        }
-      }
     }
   }
 }
