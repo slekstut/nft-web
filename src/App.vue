@@ -21,7 +21,7 @@ body {
 
 }
 #app {
-  min-heigh: 100vh;
+  min-height: 100vh;
   font-family: $font-family;
 }
 
