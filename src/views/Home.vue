@@ -24,21 +24,7 @@
           </div>
         </div>
         <div class="header-right">
-          <div class="header-images">
-            <div class="header-image">
-              <img src="../assets/images/image-27.png" alt="image-27.png" />
-            </div>
-            <div class="header-image">
-              <img src="../assets/images/image-30.png" alt="image-30.png" />
-            </div>
-            <div class="header-image">
-              <img src="../assets/images/image-28.png" alt="image-28.png" />
-            </div>
-            <div class="header-image">
-              <img src="../assets/images/image-29.png" alt="image-29.png" />
-            </div>
-          </div>
-          <div class="img-separator"></div>
+          <img src="../assets/images/header-img.png"/>
         </div>
       </header>
     </div>
@@ -65,8 +51,9 @@ header {
   margin-top: 7rem;
   .header-left {
     display: grid;
-    gap: $gap-2;
+    gap: $gap-3;
     grid-template-columns: 1fr;
+    margin-top: 8.5rem;
     h1 {
       font-size: 6rem;
       color: $color-dark-blue;
@@ -88,33 +75,14 @@ header {
       align-items: center;
     }
   }
-  .header-right {
-    position: relative;
-    .header-images {
-      display: grid;
-      gap: $gap-2 0;
-      grid-template-columns: 1fr 1fr;
-      .header-image {
-        img {
-          border-radius: 9.8125rem;
-          margin-left: auto;
-        }
-      }
-    }
-    .img-separator {
+  .header-right img{
       width: 992px;
-      height: 600px;
-      background-image: url("../assets/images/separator.svg");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      position: absolute;
+      height: 700px;
       position: absolute;
       top: 50%;
-      right: 0;
-      transform: translateY(-50%);
-      z-index: -1;
-    }
+      right: 1%;
+      transform: translate(-1%, -50%);
+      z-index: 2;
   }
 }
 </style>
