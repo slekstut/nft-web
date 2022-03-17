@@ -16,13 +16,15 @@
         </div>
       </div>
       <div class="about-section">
-        <div class="about-right">
+        <div class="about-left">
           <img src="../assets/images/image31.png"/>
         </div>
-        <div class="about-left">
-          <h1>Why we are different with others</h1>
-          <p>The pain itself is love, the main storage system. It's not a great idea, it's a free and ugly scenario of life. And that is the curse of the weekend.</p>
-          <button>Learn more</button>
+        <div class="about-right">
+          <div>
+            <h1>Why we are different with others</h1>
+            <p>The pain itself is love, the main storage system. It's not a great idea, it's a free and ugly scenario of life. And that is the curse of the weekend.</p>
+            <button>Learn more</button>
+          </div>
         </div>
       </div>
     </div>
@@ -68,22 +70,31 @@ export default {
       .about-section {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        .about-right {
+        .about-left {
           img {
             border-radius: 18.75rem;
           }
         }
-        .about-left {
-          display: grid;
+        .about-right {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
           gap: $gap-1;
+          div {
+            display: flex;
+            flex-direction: column;
+            gap: $gap-2;
           h1 {
             font-size: 3.8rem;
+            font-weight: 400;
             color: $color-dark-blue;
             line-height: 1.4;
           }
           p {
             font-size: 1.125rem;
             max-width: 75%;
+          }
           }
         }
       }
