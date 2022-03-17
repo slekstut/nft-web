@@ -24,7 +24,7 @@
           </div>
         </div>
         <div class="header-right">
-          <img src="../assets/images/header-img.png"/>
+          <img src="../assets/images/header-img.png" />
         </div>
       </header>
     </div>
@@ -43,46 +43,54 @@ export default {
 
 <style lang="scss" scoped>
 header {
-  display: grid;
-  gap: $gap-2;
-  grid-template-columns: 1fr 1fr;
-  justify-content: center;
-  align-items: start;
   margin-top: 7rem;
-  .header-left {
-    display: grid;
-    gap: $gap-3;
-    grid-template-columns: 1fr;
-    margin-top: 8.5rem;
-    h1 {
-      font-size: 6rem;
-      color: $color-dark-blue;
-      font-weight: 700;
-      line-height: 1;
-    }
-    p {
-      font-size: 1.5rem;
-      color: $color-dark-blue;
-      opacity: 0.7;
-      font-weight: 400;
-      line-height: 1.3;
-      max-width: 80%;
-    }
-    .cta {
+  .wrapper {
+    header {
       display: flex;
-      flex-direction: row;
-      justify-content: start;
+      gap: $gap-2;
+      flex-direction: column;
+      justify-content: center;
       align-items: center;
+      .header-left {
+        display: grid;
+        gap: $gap-3;
+        grid-template-columns: 1fr;
+        margin-top: 8.5rem;
+        h1 {
+          font-size: 6rem;
+          color: $color-dark-blue;
+          font-weight: 700;
+          line-height: 1;
+        }
+        p {
+          font-size: 1.5rem;
+          color: $color-dark-blue;
+          opacity: 0.7;
+          font-weight: 400;
+          line-height: 1.3;
+          max-width: 80%;
+        }
+        .cta {
+          display: flex;
+          flex-direction: row;
+          justify-content: start;
+          align-items: center;
+        }
+      }
+      .header-right {
+        //width: 992px;
+        //height: 700px;
+        z-index: 2;
+        //position: absolute;
+        //top: 50%;
+        //right: 1%;
+        //transform: translate(-1%, -50%);
+        img {
+          //width: 100%;
+          //height: auto;
+        }
+      }
     }
-  }
-  .header-right img{
-      width: 992px;
-      height: 700px;
-      position: absolute;
-      top: 50%;
-      right: 1%;
-      transform: translate(-1%, -50%);
-      z-index: 2;
   }
 }
 </style>
