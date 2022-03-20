@@ -42,53 +42,58 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-header {
-  margin-top: 7rem;
-  .wrapper {
-    header {
-      display: flex;
-      gap: $gap-2;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      .header-left {
-        display: grid;
-        gap: $gap-3;
-        grid-template-columns: 1fr;
-        margin-top: 8.5rem;
-        h1 {
-          font-size: 6rem;
-          color: $color-dark-blue;
-          font-weight: 700;
-          line-height: 1;
-        }
-        p {
-          font-size: 1.5rem;
-          color: $color-dark-blue;
-          opacity: 0.7;
-          font-weight: 400;
-          line-height: 1.3;
-          max-width: 80%;
-        }
-        .cta {
-          display: flex;
-          flex-direction: row;
-          justify-content: start;
-          align-items: center;
+.wrapper {
+  margin-top: 5rem;
+  header {
+    display: flex;
+    gap: $gap-2;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+    .header-left {
+      display: grid;
+      gap: $gap-3;
+      grid-template-columns: 1fr;
+      margin-top: 8.5rem;
+      width: 55%;
+      h1 {
+        font-size: 6rem;
+        color: $color-dark-blue;
+        font-weight: 700;
+        line-height: 1;
+      }
+      p {
+        font-size: 1.5rem;
+        color: $color-dark-blue;
+        opacity: 0.7;
+        font-weight: 400;
+        line-height: 1.3;
+        max-width: 80%;
+      }
+      .cta {
+        width: fit-content;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        button {
+          padding: 1.1875rem 2rem;
         }
       }
-      .header-right {
-        //width: 992px;
-        //height: 700px;
-        z-index: 2;
-        //position: absolute;
-        //top: 50%;
-        //right: 1%;
-        //transform: translate(-1%, -50%);
-        img {
-          //width: 100%;
-          //height: auto;
-        }
+    }
+    .header-right {
+      width: 100%;
+      max-width: 992px;
+      height: 700px;
+      z-index: -1;
+      position: absolute;
+      bottom: -6%;
+      right: 0;
+      transform: translateY(6%);
+      img {
+        width: 100%;
+        height: auto;
       }
     }
   }

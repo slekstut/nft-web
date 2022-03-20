@@ -23,7 +23,7 @@
           <div>
             <h1>Why we are different with others</h1>
             <p>The pain itself is love, the main storage system. It's not a great idea, it's a free and ugly scenario of life. And that is the curse of the weekend.</p>
-            <button>Learn more</button>
+            <button class="active-btn">Learn more</button>
           </div>
         </div>
       </div>
@@ -94,6 +94,10 @@ export default {
           p {
             font-size: 1.125rem;
             max-width: 75%;
+          }
+          button {
+            width: fit-content;
+            color: $color-sand;
           }
           }
         }
