@@ -3,6 +3,7 @@
   <router-view/>
   <About/>
   <Auction/>
+  <Creators/>
   <Footer/>
 </template>
 
@@ -11,6 +12,7 @@ import Navbar from "@/components/Navbar.vue";
 import Footer from "@/components/Footer.vue";
 import About from '@/views/About.vue'
 import Auction from '@/views/Trending.vue'
+import Creators from '@/views/Creators.vue'
 
 
 export default {
@@ -18,6 +20,7 @@ export default {
     Navbar,
     About,
     Auction,
+    Creators,
     Footer
   }
 }

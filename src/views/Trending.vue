@@ -20,9 +20,17 @@
         </div>
       </div>
       <div class="cards">
-         <div class="arrows">
-            <img src="../assets/images/arrow-left.svg" alt="arrow-left" class="arrow-left">
-            <img src="../assets/images/arrow-right.svg" alt="arrow-right" class="arrow-right">
+        <div class="arrows">
+          <img
+            src="../assets/images/arrow-left.svg"
+            alt="arrow-left"
+            class="arrow-left"
+          />
+          <img
+            src="../assets/images/arrow-right.svg"
+            alt="arrow-right"
+            class="arrow-right"
+          />
         </div>
         <div class="card">
           <div class="card__image">
@@ -79,8 +87,16 @@
           <p class="card__price">245 ETH</p>
         </div>
         <div class="vertical-lines">
-            <img src="../assets/images/vertical-line.svg" alt="vertical-line" class="left-line">
-            <img src="../assets/images/vertical-line.svg" alt="vertical-line" class="right-line">
+          <img
+            src="../assets/images/vertical-line.svg"
+            alt="vertical-line"
+            class="left-line"
+          />
+          <img
+            src="../assets/images/vertical-line.svg"
+            alt="vertical-line"
+            class="right-line"
+          />
         </div>
       </div>
     </div>
@@ -140,18 +156,13 @@ export default {};
     column-gap: 3.5rem;
     row-gap: 6.875rem;
     .arrows {
-            position: absolute;
-            top: -5%;
-            right: 0;
-            transform: translate(0, 5%);
-            display: flex;
-            flex-direction: row;
-            gap: 0.625rem;
-        .arrow-left {
-            
-        }
-        .arrow-right {
-        }
+      position: absolute;
+      top: -5%;
+      right: 0;
+      transform: translate(0, 5%);
+      display: flex;
+      flex-direction: row;
+      gap: 0.625rem;
     }
     .card {
       margin: 0 auto;
@@ -188,18 +199,18 @@ export default {};
       }
     }
     .vertical-lines {
-        .left-line {
-            position: absolute;
-            top: 0;
-            left: 31%;
-            transform: translateX(-31%);
-        }
-        .right-line {
-            position: absolute;
-            top: 0;
-            right: 26%;
-            transform: translateX(-26%);
-        }
+      .left-line {
+        position: absolute;
+        top: 0;
+        left: 31%;
+        transform: translateX(-31%);
+      }
+      .right-line {
+        position: absolute;
+        top: 0;
+        right: 26%;
+        transform: translateX(-26%);
+      }
     }
   }
 }
