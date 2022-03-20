@@ -23,10 +23,10 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 #app {
-  font-family: $font-family;
   min-height: 100vh;
+  font-family: $font-family;
 }
 
 </style>
