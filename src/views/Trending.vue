@@ -19,6 +19,62 @@
           <button>Zombie</button>
         </div>
       </div>
+      <div class="cards">
+        <div class="card">
+          <div class="card__image">
+            <img src="../assets/images/image-32.png" alt="image-32" />
+          </div>
+          <h3 class="card__title">Punk evelynn</h3>
+          <p class="card__timing">24h : 24m : 24s</p>
+          <a href="#" class="card__bid">Place a bid</a>
+          <p class="card__price">245 ETH</p>
+        </div>
+        <div class="card">
+          <div class="card__image">
+            <img src="../assets/images/image-33.png" alt="image-33" />
+          </div>
+          <h3 class="card__title">Haslivbe</h3>
+          <p class="card__timing">24h : 24m : 24s</p>
+          <a href="#" class="card__bid">Place a bid</a>
+          <p class="card__price">245 ETH</p>
+        </div>
+        <div class="card">
+          <div class="card__image">
+            <img src="../assets/images/image-34.png" alt="image-34" />
+          </div>
+          <h3 class="card__title">Prime Ape</h3>
+          <p class="card__timing">24h : 24m : 24s</p>
+          <a href="#" class="card__bid">Place a bid</a>
+          <p class="card__price">245 ETH</p>
+        </div>
+        <div class="card">
+          <div class="card__image">
+            <img src="../assets/images/image-35.png" alt="image-35" />
+          </div>
+          <h3 class="card__title">KHALIFA</h3>
+          <p class="card__timing">24h : 24m : 24s</p>
+          <a href="#" class="card__bid">Place a bid</a>
+          <p class="card__price">245 ETH</p>
+        </div>
+        <div class="card">
+          <div class="card__image">
+            <img src="../assets/images/image-36.png" alt="image-36" />
+          </div>
+          <h3 class="card__title">Futuristic Self</h3>
+          <p class="card__timing">24h : 24m : 24s</p>
+          <a href="#" class="card__bid">Place a bid</a>
+          <p class="card__price">245 ETH</p>
+        </div>
+        <div class="card">
+          <div class="card__image">
+            <img src="../assets/images/image-37.png" alt="image-37" />
+          </div>
+          <h3 class="card__title">Voxel Nation</h3>
+          <p class="card__timing">24h : 24m : 24s</p>
+          <a href="#" class="card__bid">Place a bid</a>
+          <p class="card__price">245 ETH</p>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -58,6 +114,48 @@ export default {};
       gap: 2rem;
       button {
         font-size: 1.125rem;
+      }
+    }
+  }
+  .cards {
+    width: 100%;
+    margin-top: 6.25rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3.5rem;
+    row-gap: 6.875rem;
+    .card {
+      margin: 0 auto;
+      place-items: center;
+      & > * {
+        text-align: center;
+      }
+      &__image {
+        img {
+          border-radius: 37.5rem;
+        }
+      }
+      &__title {
+        margin-top: 1rem;
+        font-size: 2rem;
+        line-height: 1.5;
+      }
+      &__timing {
+        margin-top: 0.875rem;
+        font-size: 1.125rem;
+        opacity: 0.7;
+      }
+      &__bid {
+        margin-top: 0.875rem;
+        display: block;
+        font-size: 1.5rem;
+        color: $color-dark-blue;
+        text-align: center;
+      }
+      &__price {
+        margin-top: 1.5rem;
+        font-size: 1.5rem;
+        font-weight: 700;
       }
     }
   }
