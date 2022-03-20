@@ -20,6 +20,10 @@
         </div>
       </div>
       <div class="cards">
+         <div class="arrows">
+            <img src="../assets/images/arrow-left.svg" alt="arrow-left" class="arrow-left">
+            <img src="../assets/images/arrow-right.svg" alt="arrow-right" class="arrow-right">
+        </div>
         <div class="card">
           <div class="card__image">
             <img src="../assets/images/image-32.png" alt="image-32" />
@@ -74,6 +78,10 @@
           <a href="#" class="card__bid">Place a bid</a>
           <p class="card__price">245 ETH</p>
         </div>
+        <div class="vertical-lines">
+            <img src="../assets/images/vertical-line.svg" alt="vertical-line" class="left-line">
+            <img src="../assets/images/vertical-line.svg" alt="vertical-line" class="right-line">
+        </div>
       </div>
     </div>
   </div>
@@ -104,6 +112,7 @@ export default {};
     }
   }
   .filter-wrapper {
+    position: relative;
     padding: 0.625rem 1.0625rem;
     margin-top: 2.5rem;
     border: 2px solid $color-dark-blue;
@@ -111,19 +120,39 @@ export default {};
     .filter-content {
       display: flex;
       flex-direction: row;
-      gap: 2rem;
+      gap: 4.375rem;
       button {
+        width: fit-content;
+        padding: 0;
         font-size: 1.125rem;
+      }
+      button.active-btn {
+        padding: 11px 17px;
       }
     }
   }
   .cards {
+    position: relative;
     width: 100%;
     margin-top: 6.25rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 3.5rem;
     row-gap: 6.875rem;
+    .arrows {
+            position: absolute;
+            top: -5%;
+            right: 0;
+            transform: translate(0, 5%);
+            display: flex;
+            flex-direction: row;
+            gap: 0.625rem;
+        .arrow-left {
+            
+        }
+        .arrow-right {
+        }
+    }
     .card {
       margin: 0 auto;
       place-items: center;
@@ -146,17 +175,31 @@ export default {};
         opacity: 0.7;
       }
       &__bid {
-        margin-top: 0.875rem;
+        //margin-top: 0.875rem;
         display: block;
         font-size: 1.5rem;
         color: $color-dark-blue;
         text-align: center;
       }
       &__price {
-        margin-top: 1.5rem;
+        margin-top: 1rem;
         font-size: 1.5rem;
         font-weight: 700;
       }
+    }
+    .vertical-lines {
+        .left-line {
+            position: absolute;
+            top: 0;
+            left: 31%;
+            transform: translateX(-31%);
+        }
+        .right-line {
+            position: absolute;
+            top: 0;
+            right: 26%;
+            transform: translateX(-26%);
+        }
     }
   }
 }
