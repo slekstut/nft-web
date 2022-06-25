@@ -4,6 +4,7 @@
   <about-component/>
   <trending-component/>
   <creators-component/>
+  <contact-component/>
   <footer-component/>
 </template>
 
@@ -13,6 +14,7 @@ import FooterComponent from "@/components/FooterComponent.vue";
 import AboutComponent from '@/views/AboutComponent.vue'
 import TrendingComponent from '@/views/TrendingComponent.vue'
 import CreatorsComponent from '@/views/CreatorsComponent.vue'
+import ContactComponent from '@/components/ContactComponent.vue'
 
 
 export default {
@@ -21,6 +23,7 @@ export default {
     AboutComponent,
     TrendingComponent,
     CreatorsComponent,
+    ContactComponent,
     FooterComponent
   }
 }
