@@ -49,7 +49,7 @@
                 </div>
             </div>
         </div>
-        <div class="footer-bottom">
+        <div class="footer__bottom">
             <p>Copyright © NFT | Designed By HRIDOY | Coded By Sarunas Lekstutis</p>
         </div>
     </div>
@@ -75,6 +75,17 @@ export default {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        position: relative;
+        &::before {
+            position: absolute;
+            content: '';
+            width: 949px;
+            height: 2px;
+            background-color: $color-dark-blue;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
     }
 
     &__left {
@@ -97,6 +108,33 @@ export default {
             &:last-child {
                 margin-right: 0;
             }
+        }
+    }
+    .footer__social-icons {
+        display: flex;
+        align-items: center;
+        gap: 42px;
+
+        svg {
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        .footer__copyright {
+            font-size: 18px;
+            line-height: 19px;
+            margin-right: 40px;
+        }
+    }
+    &__bottom {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        border-top: 2px solid #0A0D2C;
+        p {
+        margin: 20px 0 13px 0;
         }
     }
 }
