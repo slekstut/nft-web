@@ -5,11 +5,9 @@
 ## Technologies used: HTML/SCSS/VUE JS
 
 
+## Project screenshots:
 
-<img
-  src="https://prnt.sc/xobYy-yw2AkJ"
-  alt="https://prnt.sc/xobYy-yw2AkJ"
-  style="display: inline-block; margin: 0 auto; max-width: 300px">
+![My Remote Image](https://prnt.sc/xobYy-yw2AkJ)
 
 https://prnt.sc/fBVGHs0rWbM5
 https://prnt.sc/eBlvsFDCzP00
