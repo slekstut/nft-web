@@ -4,7 +4,13 @@
 
 ## Technologies used: HTML/SCSS/VUE JS
 
-https://prnt.sc/xobYy-yw2AkJ
+
+
+<img
+  src="https://prnt.sc/xobYy-yw2AkJ"
+  alt="https://prnt.sc/xobYy-yw2AkJ"
+  style="display: inline-block; margin: 0 auto; max-width: 300px">
+
 https://prnt.sc/fBVGHs0rWbM5
 https://prnt.sc/eBlvsFDCzP00
 https://prnt.sc/RcvenRMhCJOy
