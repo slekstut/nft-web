@@ -7,7 +7,7 @@
 
 ## Project screenshots:
 
-![My Remote Image](https://prnt.sc/xobYy-yw2AkJ)
+https://prnt.sc/xobYy-yw2AkJ
 
 https://prnt.sc/fBVGHs0rWbM5
 https://prnt.sc/eBlvsFDCzP00
