@@ -9,9 +9,16 @@
             <button>Sign up now</button>
         </div>
         <div class="invitation-component__images">
-            <img src="../assets/images/contact-section-img2.png" alt="contact-section-img2.png">
-            <img src="../assets/images/contact-section-img3.png" alt="contact-section-img3.png">
-            <img src="../assets/images/contact-section-img1.png" alt="contact-section-img1.png">
+            <div class="invitation-component__image">
+                <img src="../assets/images/contact-section-img2.png" alt="contact-section-img2.png">
+            </div>
+            <div class="invitation-component__image">
+                <img src="../assets/images/contact-section-img3.png" alt="contact-section-img3.png">
+            </div>
+            <div class="invitation-component__image">
+                <img src="../assets/images/contact-section-img1.png" alt="contact-section-img1.png">
+            </div>
+
         </div>
     </div>
 </template>
@@ -56,7 +63,48 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        // margin-top: -100px;
+        margin-top: 100px;
+
+        
+    }
+    &__image {
+        position: relative;
+        &:nth-child(1) {
+            max-height: 400px;
+            position: relative;
+            
+        }
+
+        &:nth-child(2) {
+            transform: translateY(-30%);
+            max-height: 510px;
+            &::before {
+                position: absolute;
+                content: '';
+                width: 8px;
+                height: 581px;
+                left: -59px;
+                top: 0;
+                background-color: $color-dark-blue;
+            }
+           
+        }
+
+        &:nth-child(3) {
+            transform: translateY(-90%);
+            max-height: 560px;
+
+             &::before {
+                position: absolute;
+                content: '';
+                width: 8px;
+                height: 879px;
+                left: -59px;
+                top: 0;
+                background-color: $color-dark-blue;
+            }
+
+        }
     }
 }
 </style>
