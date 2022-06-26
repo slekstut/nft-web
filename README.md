@@ -1,6 +1,12 @@
 # nft_web
 
-## Project setup
+### Project is based on the design By HRIDOY. I did a design cut work just for free and just because I liked it. The NFT web is coded only for the desktop screens that means non-responsive. Design prepared only for the desktop: url -> https://www.figma.com/file/cequ64a6vSrrbQcTxbwrkv/nft-web?node-id=2%3A13
+
+## Technologies used: HTML/SCSS/VUE JS
+
+###====================================
+
+## Project setup 
 ```
 npm install
 ```
